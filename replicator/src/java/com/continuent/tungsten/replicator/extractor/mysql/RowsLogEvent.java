@@ -954,6 +954,7 @@ public abstract class RowsLogEvent extends LogEvent
                     spec.setType(java.sql.Types.INTEGER);
                 return length;
 
+            case MysqlBinlog.MYSQL_TYPE_GEOMETRY:
             case MysqlBinlog.MYSQL_TYPE_BLOB :
                 /*
                  * BLOB or TEXT datatype
